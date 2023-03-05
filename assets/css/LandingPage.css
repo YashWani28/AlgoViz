@@ -1,0 +1,82 @@
+body{
+    background-color: black;
+}
+#logoimg{
+    margin: 0 auto;
+    display: block;
+    
+}
+.logocontainer{
+    animation: fadein1 0.5s ease-in-out forwards, scaleflash 0.5s 0.1s ease-in-out forwards;
+    width: fit-content;
+    margin: 0 auto;
+}
+.mastercontainer{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30vh;
+    
+    
+}
+.visbtn{
+   
+    /* width:; */
+    margin: 1vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 1vh 2vw;
+    font-weight: bold;
+    color: rgb(131, 19, 236);
+    background-color: aliceblue;
+    transition: linear 0.3s;
+    border-radius: 10px;
+}
+.visbtn a{
+    text-decoration: none;
+}
+.visbtn:hover{
+    scale: 1.1;
+    background-color: rgb(219, 193, 241);
+    font-weight: bold;
+    color: rgb(94, 3, 180);
+
+}
+.optcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: fadein2 1s ease-in-out 1.5s forwards;
+    opacity: 0;
+    margin: 0 auto;
+    margin-top: 3vh;
+}
+@keyframes fadein1 {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+@keyframes scaleflash {
+0% {
+    transform: scale(1);
+    box-shadow: none;   
+}
+50% {
+    transform: scale(1.4);
+    opacity: 1;
+    box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.7);
+    
+}
+100% {
+    transform: scale(1);
+}
+}
+@keyframes fadein2 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
