@@ -226,7 +226,7 @@ BFS.addEventListener("click",function(){
         alert("Please assign start and destination nodes first");
         return;
     }
-    contentbox.innerHTML=`Breadth-first search is an unweighted search technique and guarantees shortest path<br><br>Time Complexity:O(V+E) || Auxillary Space:O(V)<br> <button id="bfsinfobtn" style="color:lightblue;text-decoration:underline;background-color: transparent">CLICK FOR MORE INFO</button>`;
+    contentbox.innerHTML=`Breadth-first search is an unweighted search technique and guarantees shortest path<br><br>Time Complexity:O(V+E) || Auxillary Space:O(V)<br> `;
     disable();
     //?to disable stop the boxes from being clicked during execution, we will remove their event listners. Highlight path function will add it back
     var boxes=document.querySelectorAll('.grid-item');
@@ -261,7 +261,7 @@ DFS.addEventListener("click",function(){
         alert("Please assign start and destination nodes first");
         return;
     }
-    contentbox.innerHTML=`Depth-first search is an unweighted search technique but DOES NOT guarantee shortest path<br><br>Time Complexity:O(V+E) || Auxillary Space:O(V)<br> <button id="dfsinfobtn" style="color:lightblue;text-decoration:underline ;background-color: transparent">CLICK FOR MORE INFO</button>`;
+    contentbox.innerHTML=`Depth-first search is an unweighted search technique but DOES NOT guarantee shortest path<br><br>Time Complexity:O(V+E) || Auxillary Space:O(V)<br> `;
     disable();
     //?to disable stop the boxes from being clicked during execution, we will remove their event listners. Highlight path function will add it back
     var boxes=document.querySelectorAll('.grid-item');
